@@ -9,6 +9,7 @@ import './CSS/style.css';
 import Header from './app/Layout/Header';
 import FooterMarginTop from './app/Layout/FooterMaginTop';
 import Footer from './app/Layout/Footer';
+import NavBar from './app/Components/Navigation/NavBar';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -16,6 +17,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Header />
+    <NavBar />
     <FooterMarginTop />
     <Footer />
   </React.StrictMode>
