@@ -8,7 +8,7 @@ const ProjectCard = ({ project }: any) => {
         <div className="col-12 col-sm-6 col-md-4 text-black">
             <div className="card m-3">
                 <div className="card-body p-0">
-                    <div className="imagebox">
+                    <div className="imagebox" id="displayImage">
                         <img
                             src={project.imageUrl}
                             style={{
@@ -16,15 +16,8 @@ const ProjectCard = ({ project }: any) => {
                                 objectFit: "cover"
                             }}
                             alt="no content"
+                            onClick={() => handleRedirect(project.redirectUrl)}
                         />
-                        <div className="overlay">
-                            <button
-                                className="btn btn-light"
-                                onClick={() => handleRedirect(project.redirectUrl)}
-                            >
-                                <i className="bi bi-link-45deg"></i>
-                            </button>
-                        </div>
                     </div>
                     <div className="p-3">
                         <h3>{project.title}</h3>

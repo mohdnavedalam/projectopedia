@@ -12,16 +12,21 @@ const projectList: projectListType[] = [
     {
         imageUrl: "https://picsum.photos/200/300/",
         title: "TaskOPedia",
-        redirectUrl: "react-taskopedia.azurewebsites.net/",
+        redirectUrl: "https://www.google.com",
         description: "Learn basic fundamentals of React by building a simple Page.",
         gitHubUrl: "https://github.com/",
         youtubeUrl: "https://youtube.com/",
-        topicsCovered: ["topic 1", "topic 11"],
+        topicsCovered: [
+            "What is JSX",
+            "Props and Components",
+            "Class Based Components",
+            "Functional Components",
+          ],
     },
     {
         imageUrl: "https://picsum.photos/200/302/",
         title: "CountOPedia",
-        redirectUrl: "https://react-countopedia.azurewebsites.net/",
+        redirectUrl: "https://www.google.com/",
         description: "Build a simple Game to Attack or Defence and get points.",
         gitHubUrl: "https://github.com/",
         youtubeUrl: "https://youtube.com/",
@@ -41,8 +46,7 @@ const projectList: projectListType[] = [
         imageUrl: "https://picsum.photos/200/305",
         title: "LifeCyclOPedia",
         redirectUrl: "https://www.google.com/",
-        description:
-            "We will explore lifecycle methods in functional and class components",
+        description: "We will explore lifecycle methods in functional and class components",
         gitHubUrl: "https://github.com/",
         topicsCovered: [
             "LifeCycle in Class Components",
@@ -58,7 +62,7 @@ const projectList: projectListType[] = [
         redirectUrl: "https://www.google.com/",
         description: "We will explore more on hooks in functional components.",
         gitHubUrl: "https://github.com/",
-        topicsCovered: ["State in Functional Components", "topic 444"],
+        topicsCovered: ["State in Functional Components"],
     },
     {
         imageUrl: "https://picsum.photos/200/307/",

@@ -3,7 +3,7 @@ import projectList from "../Store/data";
 const TopicsCovered = () => {
     return (
         <div className="container p-5 text-white">
-            <div className="h3 text-success">Topics Covered</div>
+            <div className="h3 text-success" style={{marginTop: "50px"}}>Topics Covered</div>
             <hr />
             <div className="row">
                 {projectList.map((project, index) => (
