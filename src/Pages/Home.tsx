@@ -1,3 +1,4 @@
+import ProjectCard from "../app/Components/ProjectCard";
 import projectList from "../Store/data";
 
 const Home = () => {
@@ -6,7 +7,7 @@ const Home = () => {
             <div className="h3 text-success">Project List</div>
             <div className="row">
                 {projectList.map((project, index) => (
-                    <div>{project.title}</div>
+                    <ProjectCard key={index} project={project} />
                 ))}
             </div>
         </div>
