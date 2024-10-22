@@ -1,4 +1,4 @@
-import { projectListType } from "../../Store/data";
+import '../../CSS/style.css';
 
 const ProjectCard = ({ project }: any) => {
     const handleRedirect = (url: string) => {
