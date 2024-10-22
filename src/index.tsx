@@ -11,16 +11,23 @@ import FooterMarginTop from './app/Layout/FooterMaginTop';
 import Footer from './app/Layout/Footer';
 import NavBar from './app/Components/Navigation/NavBar';
 import Home from './Pages/Home';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import TopicsCovered from './Pages/TopicsCovered';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
+    <BrowserRouter>
     <Header />
     <NavBar />
-    <Home />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="topicscovered" element = {<TopicsCovered />} />
+    </Routes>
     <FooterMarginTop />
     <Footer />
+    </BrowserRouter>
   </React.StrictMode>
 );
