@@ -29,6 +29,7 @@ const ProjectCard = ({ project }: any) => {
                     </div>
                     <div className="p-3">
                         <h3>{project.title}</h3>
+                        <p>{project.description}</p>
                         <div style={{ textAlign: "center" }}>
                             {project.gitHubUrl && (
                                 <button
@@ -40,7 +41,7 @@ const ProjectCard = ({ project }: any) => {
                             )}
                             {project.youtubeUrl && (
                                 <button
-                                    className="btn m-1 btn-dark"
+                                    className="btn m-1 btn-danger"
                                     onClick={() => handleRedirect(project.youtubeUrl)}
                                 >
                                     <i className="bi bi-youtube"></i> Youtube
